@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Packages | Next Level Gaming</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Gelasio:wght@700&family=Inter:wght@400;500;600;700&family=JetBrains+Mono&display=swap" rel="stylesheet">
+
+</head>
+<body>
+  <header>
+    <div class="container nav-bar">
+      <a href="index.html" class="logo"><span class="logo-mark">N</span><span class="logo-text">NEXT LEVEL</span></a>
+      <nav aria-label="Main">
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="courses.html" aria-current="page">Packages</a></li>
+          <li><a href="fees.html">Fees</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </nav>
+      <a href="#packages" class="btn serif-btn">Book your session</a>
+    </div>
+  </header>
+
+  <main class="container">
+    <section class="page-head">
+      <div>
+        <span class="eyebrow">Choose your play</span>
+        <h1>Packages</h1>
+        <p class="lead">Four arena packages at R1,500 each, plus individual experiences at R750.</p>
+      </div>
+      <div class="chips" role="group" aria-label="Filter packages">
+        <button class="chip" data-filter="all" aria-pressed="true">All</button>
+        <button class="chip" data-filter="package" aria-pressed="false">Package</button>
+        <button class="chip" data-filter="experience" aria-pressed="false">Experience</button>
+      </div>
+    </section>
+
+    <section id="packages" class="grid" aria-live="polite">
+      <article class="card" data-type="package">
+        <div class="img">gamerpass.jpg</div>
+        <div class="meta"><span class="eyebrow">Package</span><span>Full day</span></div>
+        <h2>Ultimate Gamer Pass</h2>
+        <p>A full day of PC or console gaming with tournament perks.</p>
+        <ul class="bullets">
+          <li>Unlimited full-day access (PC or console)</li>
+          <li>High-speed internet</li>
+          <li>Snack voucher</li>
+          <li>Tournament entry</li>
+        </ul>
+        <div class="price-row"><span class="price">R1,500</span><a href="contact.html" class="btn">Book</a></div>
+      </article>
+
+      <article class="card" data-type="package">
+        <div class="img">pc-gaming.jpg</div>
+        <div class="meta"><span class="eyebrow">Package</span><span>Full day</span></div>
+        <h2>VIP Gaming Experience</h2>
+        <p>A private booth, premium kit, and dedicated support.</p>
+        <ul class="bullets">
+          <li>Private gaming booth</li>
+          <li>Premium equipment</li>
+          <li>Priority booking</li>
+          <li>Personal assistant</li>
+        </ul>
+        <div class="price-row"><span class="price">R1,500</span><a href="contact.html" class="btn">Book</a></div>
+      </article>
+
+      <article class="card" data-type="experience">
+        <div class="img">vr-experience.jpg</div>
+        <div class="meta"><span class="eyebrow experience">Experience</span><span>1 hour</span></div>
+        <h2>Virtual Reality Experience</h2>
+        <p>Step into a high-end VR setup with staff on hand.</p>
+        <ul class="bullets">
+          <li>Choice of games</li>
+          <li>Staff assistance</li>
+        </ul>
+        <div class="price-row"><span class="price">R750</span><a href="contact.html" class="btn">Book</a></div>
+      </article>
+
+      <article class="card" data-type="experience">
+        <div class="img">racing-sim.jpg</div>
+        <div class="meta"><span class="eyebrow experience">Experience</span><span>Per person</span></div>
+        <h2>Racing Simulator Challenge</h2>
+        <p>Test your speed and skill on realistic racing simulators.</p>
+        <ul class="bullets">
+          <li>Choice of tracks</li>
+          <li>Leaderboard</li>
+        </ul>
+        <div class="price-row"><span class="price">R750</span><a href="contact.html" class="btn">Book</a></div>
+      </article>
+
+      <article class="card" data-type="experience">
+        <div class="img">escape-room.jpg</div>
+        <div class="meta"><span class="eyebrow experience">Experience</span><span>Per person</span></div>
+        <h2>Escape Room Challenge</h2>
+        <p>Work together, solve puzzles, beat the clock.</p>
+        <ul class="bullets">
+          <li>Team challenge</li>
+          <li>Themed room</li>
+        </ul>
+        <div class="price-row"><span class="price">R750</span><a href="contact.html" class="btn">Book</a></div>
+      </article>
+    </section>
+  </main>
+
+  <footer>
+    <div class="container footer-row">
+      <span>© 2026 Next Level Gaming · Johannesburg</span>
+      <ul>
+        <li><a href="about.html">About</a></li>
+        <li><a href="courses.html">Packages</a></li>
+        <li><a href="fees.html">Fees</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </div>
+  </footer>
+
+  <script>
+    // Filter chips: show All, Package or Experience cards
+    const chips = document.querySelectorAll('.chip');
+    const cards = document.querySelectorAll('.card');
+    chips.forEach(chip => {
+      chip.addEventListener('click', () => {
+        const filter = chip.dataset.filter;
+        chips.forEach(c => c.setAttribute('aria-pressed', c === chip ? 'true' : 'false'));
+        cards.forEach(card => {
+          card.hidden = !(filter === 'all' || card.dataset.type === filter);
+        });
+      });
+    });
+  </script>
+</body>
+</html>
