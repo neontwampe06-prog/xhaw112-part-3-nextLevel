@@ -6,23 +6,23 @@
   <title>Packages | Next Level Gaming</title>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Gelasio:wght@700&family=Inter:wght@400;500;600;700&family=JetBrains+Mono&display=swap" rel="stylesheet">
-
+  <link href="https://fonts.googleapis.com/css2?family=Rajdhani:wght@600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-  <header>
-    <div class="container nav-bar">
-      <a href="index.html" class="logo"><span class="logo-mark">N</span><span class="logo-text">NEXT LEVEL</span></a>
-      <nav aria-label="Main">
-        <ul>
-          <li><a href="index.html">Home</a></li>
-          <li><a href="about.html">About</a></li>
-          <li><a href="courses.html" aria-current="page">Packages</a></li>
-          <li><a href="fees.html">Fees</a></li>
-          <li><a href="contact.html">Contact</a></li>
-        </ul>
-      </nav>
-      <a href="#packages" class="btn serif-btn">Book your session</a>
+  <header class="site-header container">
+    <a class="logo" href="index.html"><span class="logo-mark">N</span> NEXT LEVEL</a>
+    <nav class="main-nav" aria-label="Main">
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="packages.html" aria-current="page">Packages</a></li>
+        <li><a href="fees.html">Fees</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </nav>
+    <div class="header-actions">
+      <a href="fees.html" class="btn btn-primary">Book your session</a>
     </div>
   </header>
 
@@ -52,7 +52,7 @@
           <li>Snack voucher</li>
           <li>Tournament entry</li>
         </ul>
-        <div class="price-row"><span class="price">R1,500</span><a href="contact.html" class="btn">Book</a></div>
+        <div class="price-row"><span class="price">R1,500</span><a href="fees.html" class="btn btn-primary">Book</a></div>
       </article>
 
       <article class="card" data-type="package">
@@ -66,7 +66,7 @@
           <li>Priority booking</li>
           <li>Personal assistant</li>
         </ul>
-        <div class="price-row"><span class="price">R1,500</span><a href="contact.html" class="btn">Book</a></div>
+        <div class="price-row"><span class="price">R1,500</span><a href="fees.html" class="btn btn-primary">Book</a></div>
       </article>
 
       <article class="card" data-type="experience">
@@ -78,7 +78,7 @@
           <li>Choice of games</li>
           <li>Staff assistance</li>
         </ul>
-        <div class="price-row"><span class="price">R750</span><a href="contact.html" class="btn">Book</a></div>
+        <div class="price-row"><span class="price">R750</span><a href="fees.html" class="btn btn-primary">Book</a></div>
       </article>
 
       <article class="card" data-type="experience">
@@ -90,7 +90,7 @@
           <li>Choice of tracks</li>
           <li>Leaderboard</li>
         </ul>
-        <div class="price-row"><span class="price">R750</span><a href="contact.html" class="btn">Book</a></div>
+        <div class="price-row"><span class="price">R750</span><a href="fees.html" class="btn btn-primary">Book</a></div>
       </article>
 
       <article class="card" data-type="experience">
@@ -102,25 +102,43 @@
           <li>Team challenge</li>
           <li>Themed room</li>
         </ul>
-        <div class="price-row"><span class="price">R750</span><a href="contact.html" class="btn">Book</a></div>
+        <div class="price-row"><span class="price">R750</span><a href="fees.html" class="btn btn-primary">Book</a></div>
       </article>
     </section>
   </main>
 
-  <footer>
-    <div class="container footer-row">
-      <span>© 2026 Next Level Gaming · Johannesburg</span>
-      <ul>
-        <li><a href="about.html">About</a></li>
-        <li><a href="courses.html">Packages</a></li>
-        <li><a href="fees.html">Fees</a></li>
-        <li><a href="contact.html">Contact</a></li>
-      </ul>
+  <footer class="site-footer">
+    <div class="container footer-grid">
+      <div>
+        <a class="logo" href="index.html"><span class="logo-mark">N</span> NEXT LEVEL</a>
+        <p>Gaming &amp; Esports Arena<br>Play. Compete. Connect.</p>
+      </div>
+      <nav aria-label="Explore">
+        <h4>Explore</h4>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="packages.html">Packages</a></li>
+          <li><a href="fees.html">Fees</a></li>
+        </ul>
+      </nav>
+      <nav aria-label="Support">
+        <h4>Support</h4>
+        <ul>
+          <li><a href="contact.html">Contact us</a></li>
+          <li><a href="fees.html">Book a session</a></li>
+        </ul>
+      </nav>
+      <address>
+        <h4>Visit</h4>
+        Parktown 2198, Johannesburg<br>
+        Open daily · 10:00–18:00<br>
+        <a href="tel:+27115547728">011 554 7728</a>
+      </address>
     </div>
   </footer>
 
   <script>
-    // Filter chips: show All, Package or Experience cards
     const chips = document.querySelectorAll('.chip');
     const cards = document.querySelectorAll('.card');
     chips.forEach(chip => {

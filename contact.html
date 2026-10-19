@@ -6,23 +6,23 @@
   <title>Contact | Next Level Gaming</title>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Gelasio:wght@700&family=Inter:wght@400;500;600;700&family=JetBrains+Mono&display=swap" rel="stylesheet">
-  
+  <link href="https://fonts.googleapis.com/css2?family=Rajdhani:wght@600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-  <header>
-    <div class="container nav-bar">
-      <a href="index.html" class="logo"><span class="logo-mark">N</span><span class="logo-text">NEXT LEVEL</span></a>
-      <nav aria-label="Main">
-        <ul>
-          <li><a href="index.html">Home</a></li>
-          <li><a href="about.html">About</a></li>
-          <li><a href="courses.html">Packages</a></li>
-          <li><a href="fees.html">Fees</a></li>
-          <li><a href="contact.html" aria-current="page">Contact</a></li>
-        </ul>
-      </nav>
-      <a href="courses.html" class="btn">Book your session</a>
+  <header class="site-header container">
+    <a class="logo" href="index.html"><span class="logo-mark">N</span> NEXT LEVEL</a>
+    <nav class="main-nav" aria-label="Main">
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="packages.html">Packages</a></li>
+        <li><a href="fees.html">Fees</a></li>
+        <li><a href="contact.html" aria-current="page">Contact</a></li>
+      </ul>
+    </nav>
+    <div class="header-actions">
+      <a href="fees.html" class="btn btn-primary">Book your session</a>
     </div>
   </header>
 
@@ -42,7 +42,7 @@
             <div class="field"><label for="email">Email</label><input id="email" name="email" type="email" placeholder="you@example.com" required></div>
           </div>
           <div class="row">
-            <div class="field"><label for="phone">Mobile number</label><input id="phone" name="phone" type="tel" placeholder="+27 00 000 0000"></div>
+            <div class="field"><label for="phone">Mobile number</label><input id="phone" name="phone" type="tel" placeholder="+27 11 554 7728"></div>
             <div class="field">
               <label for="topic">Topic</label>
               <select id="topic" name="topic">
@@ -54,35 +54,52 @@
             </div>
           </div>
           <div class="field"><label for="message">Message</label><textarea id="message" name="message" placeholder="Tell us what you'd like to book, the date and how many players." required></textarea></div>
-          <button type="submit" class="btn">Send message</button>
+          <button type="submit" class="btn btn-primary">Send message</button>
           <p class="success" id="success" role="status">Message sent. We'll reply within one working day.</p>
           <p class="form-note">We only use your details to reply to your message.</p>
         </form>
       </section>
 
       <aside class="info" aria-label="Venue details">
-        <div class="map" role="img" aria-label="Map of the venue">map.jpg</div>
-        <div class="info-item"><span class="eyebrow">Visit</span><h3>Next Level Gaming</h3><p>[STREET ADDRESS], Johannesburg</p></div>
+        <div class="info-item"><span class="eyebrow">Visit</span><h3>Next Level Gaming</h3><p>Parktown 2198, Johannesburg</p></div>
         <div class="info-item"><span class="eyebrow">Opening hours</span><h3>10:00–18:00</h3><p>Open daily</p></div>
-        <div class="info-item"><span class="eyebrow">Call or email</span><h3><a href="tel:+27000000000" style="text-decoration: none">[PHONE NUMBER]</a></h3><p><a href="mailto:[EMAIL]">[EMAIL ADDRESS]</a></p></div>
+        <div class="info-item"><span class="eyebrow">Call or email</span><h3><a href="tel:+27115547728" style="text-decoration: none">011 554 7728</a></h3><p><a href="mailto:info@nextlevelgaming.co.za">info@nextlevelgaming.co.za</a></p></div>
       </aside>
     </div>
   </main>
 
-  <footer>
-    <div class="container footer-row">
-      <span>© 2026 Next Level Gaming · Johannesburg</span>
-      <ul>
-        <li><a href="about.html">About</a></li>
-        <li><a href="courses.html">Packages</a></li>
-        <li><a href="fees.html">Fees</a></li>
-        <li><a href="contact.html">Contact</a></li>
-      </ul>
+  <footer class="site-footer">
+    <div class="container footer-grid">
+      <div>
+        <a class="logo" href="index.html"><span class="logo-mark">N</span> NEXT LEVEL</a>
+        <p>Gaming &amp; Esports Arena<br>Play. Compete. Connect.</p>
+      </div>
+      <nav aria-label="Explore">
+        <h4>Explore</h4>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="packages.html">Packages</a></li>
+          <li><a href="fees.html">Fees</a></li>
+        </ul>
+      </nav>
+      <nav aria-label="Support">
+        <h4>Support</h4>
+        <ul>
+          <li><a href="contact.html">Contact us</a></li>
+          <li><a href="fees.html">Book a session</a></li>
+        </ul>
+      </nav>
+      <address>
+        <h4>Visit</h4>
+        Parktown 2198, Johannesburg<br>
+        Open daily · 10:00–18:00<br>
+        <a href="tel:+27115547728">011 554 7728</a>
+      </address>
     </div>
   </footer>
 
   <script>
-    // Show a confirmation instead of reloading the page
     document.getElementById('contact-form').addEventListener('submit', function (e) {
       e.preventDefault();
       document.getElementById('success').classList.add('show');
