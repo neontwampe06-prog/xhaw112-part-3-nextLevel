@@ -150,8 +150,12 @@ Through this project, the team applied and developed skills in:
 
 ## References
 
-- Operating Jitas Phase 3 planning document, MAST5112, 21 August 2026.
-- HTML documentation: <https://developer.mozilla.org/en-US/docs/Web/HTML>
-- JavaScript documentation: <https://developer.mozilla.org/en-US/docs/Web/JavaScript>
-- Google Fonts: <https://fonts.google.com/>
-- GitHub documentation: <https://docs.github.com/>
+- GitHub (2026). GitHub documentation. Available at: https://docs.github.com/ (Accessed: 20 October 2026).
+
+- Google (2026). Google Fonts. Available at: https://fonts.google.com/ (Accessed: 20 October 2026).
+
+- MAST5112 (2026). Operating Jitas Phase 3 planning document. 21 August 2026.
+
+- Mozilla (2026). HTML documentation. Available at: https://developer.mozilla.org/en-US/docs/Web/HTML (Accessed: 20 October 2026).
+
+- Mozilla (2026). JavaScript documentation. Available at: https://developer.mozilla.org/en-US/docs/Web/JavaScript (Accessed: 20 October 2026).
