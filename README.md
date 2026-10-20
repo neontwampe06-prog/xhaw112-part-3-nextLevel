@@ -71,7 +71,8 @@ The website prototype currently contains:
 - Venue information and an about page.
 - A package and experience listing in `packages.html`, with concise summaries and links to each offering's detail page.
 - Individual detail pages for four packages and three experiences.
-- A booking-selection mock-up in `index.html` and `fees.html`.
+- An arena homepage in `index.html` with links to packages, venue information, contact details, and booking.
+- A booking-selection mock-up in `fees.html`.
 - A contact page with venue address, hours, phone number, and email.
 - A contact form that opens the visitor's email app to send an enquiry.
 
@@ -81,7 +82,6 @@ The website prototype currently contains:
 - Sending a contact enquiry requires a configured email app. The site does not store or send messages itself.
 - There is no backend, database, user account, payment, or persistent booking functionality.
 - Pages reference `styles.css` or `course.css`, but neither stylesheet is present in the repository. The intended page styling therefore is not included here.
-- The current `index.html` content is a booking-selection prototype rather than a dedicated arena home page.
 
 ## Design Approach
 
