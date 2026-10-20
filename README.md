@@ -159,3 +159,5 @@ Through this project, the team applied and developed skills in:
 - Mozilla (2026). HTML documentation. Available at: https://developer.mozilla.org/en-US/docs/Web/HTML (Accessed: 20 October 2026).
 
 - Mozilla (2026). JavaScript documentation. Available at: https://developer.mozilla.org/en-US/docs/Web/JavaScript (Accessed: 20 October 2026).
+
+- Visual Studio Code (2026). Visual Studio Code documentation. Microsoft. Available at: https://code.visualstudio.com/docs (Accessed: 20 October 2026).
