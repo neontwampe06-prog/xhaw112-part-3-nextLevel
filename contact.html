@@ -35,7 +35,7 @@
 
     <div class="contact-grid">
       <section class="card">
-        <form id="contact-form">
+        <form action="mailto:info@nextlevelgaming.co.za" method="post" enctype="text/plain">
           <h2>Send a message</h2>
           <div class="row">
             <div class="field"><label for="name">Full name</label><input id="name" name="name" placeholder="Thabo Mokoena" required></div>
@@ -55,8 +55,7 @@
           </div>
           <div class="field"><label for="message">Message</label><textarea id="message" name="message" placeholder="Tell us what you'd like to book, the date and how many players." required></textarea></div>
           <button type="submit" class="btn btn-primary">Send message</button>
-          <p class="success" id="success" role="status">Message sent. We'll reply within one working day.</p>
-          <p class="form-note">We only use your details to reply to your message.</p>
+          <p class="form-note">Your email app will open so you can review and send your message.</p>
         </form>
       </section>
 
@@ -98,13 +97,5 @@
       </address>
     </div>
   </footer>
-
-  <script>
-    document.getElementById('contact-form').addEventListener('submit', function (e) {
-      e.preventDefault();
-      document.getElementById('success').classList.add('show');
-      this.reset();
-    });
-  </script>
 </body>
 </html>

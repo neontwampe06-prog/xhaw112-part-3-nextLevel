@@ -69,18 +69,17 @@ The project plan identifies these goals for the digital platform:
 The website prototype currently contains:
 
 - Venue information and an about page.
-- A package and experience listing in `courses.html`, with client-side filters for packages and experiences.
+- A package and experience listing in `packages.html`, with concise summaries and links to each offering's detail page.
 - Individual detail pages for four packages and three experiences.
 - A booking-selection mock-up in `index.html` and `fees.html`.
 - A contact page with venue address, hours, phone number, and email.
-- A contact form that displays a confirmation message locally.
+- A contact form that opens the visitor's email app to send an enquiry.
 
 ### Current Limitations
 
 - The booking page is a static mock-up. Selecting an offering, date, time, or quantity does not update the summary, and confirming does not submit a booking.
-- The contact form prevents normal submission and shows a demonstration success message. It does not send or save the message.
+- Sending a contact enquiry requires a configured email app. The site does not store or send messages itself.
 - There is no backend, database, user account, payment, or persistent booking functionality.
-- The listing and navigation refer to `packages.html`, but the listing file in this repository is named `courses.html`.
 - Pages reference `styles.css` or `course.css`, but neither stylesheet is present in the repository. The intended page styling therefore is not included here.
 - The current `index.html` content is a booking-selection prototype rather than a dedicated arena home page.
 
@@ -97,7 +96,8 @@ The intended visual direction uses a dark, high-tech gaming aesthetic with neon 
 ├── README.md
 ├── index.html
 ├── about.html
-├── courses.html
+├── packages.html
+├── courses.html (redirects to packages.html)
 ├── fees.html
 ├── contact.html
 ├── Ultimate gamer pass.html
@@ -107,21 +107,15 @@ The intended visual direction uses a dark, high-tech gaming aesthetic with neon 
 ├── Virtual Reality.html
 ├── Racing Simulator challenge.html
 ├── Escape Room challenge.html
-├── assets/
-│   └── gaming-setup.jpg
-└── js/
-    ├── app.js
-    └── script.js
+└── assets/
+    └── gaming-setup.jpg
 ```
-
-The filters and contact-form demonstration are implemented with scripts embedded in their respective HTML pages. The files in `js/` are included in the repository but are not loaded by the pages listed above.
 
 ## Technology
 
 The website prototype uses:
 
 - HTML for page structure and content.
-- JavaScript for the package-list filters and demonstration contact-form interaction.
 - Google Fonts for the Rajdhani typeface on pages that load it; an internet connection is needed to fetch the font.
 
 ## Run the Website
@@ -142,7 +136,7 @@ Through this project, the team applied and developed skills in:
 
 - Project planning and requirements analysis.
 - User-centred design and interface development.
-- HTML, CSS, and JavaScript website development.
+- HTML and CSS website development.
 - Research and problem solving.
 - Team communication and collaboration.
 - GitHub version control.
@@ -155,7 +149,5 @@ Through this project, the team applied and developed skills in:
 - Google (2026). Google Fonts. Available at: https://fonts.google.com/ (Accessed: 20 October 2026).
 
 - Mozilla (2026). HTML documentation. Available at: https://developer.mozilla.org/en-US/docs/Web/HTML (Accessed: 20 October 2026).
-
-- Mozilla (2026). JavaScript documentation. Available at: https://developer.mozilla.org/en-US/docs/Web/JavaScript (Accessed: 20 October 2026).
 
 - Visual Studio Code (2026). Visual Studio Code documentation. Microsoft. Available at: https://code.visualstudio.com/docs (Accessed: 20 October 2026).
