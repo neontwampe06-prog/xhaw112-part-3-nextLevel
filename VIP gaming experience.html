@@ -4,11 +4,14 @@
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>VIP Gaming Experience | Next Level</title>
-  <link rel="stylesheet" href="course.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <script src="js/script.js" defer></script>
 </head>
 <body>
-  <header>
-    <a class="logo" href="index.html">NL</a>
+  <a class="skip-link" href="#main">Skip to content</a>
+  <header class="site-header container">
+    <a class="logo" href="index.html" aria-label="Next Level Arena home"><img class="brand-logo" src="assets/next-level-logo.png" alt="Next Level Gaming"></a>
     <nav>
       <a href="index.html">Home</a>
       <a href="packages.html">Packages</a>
@@ -19,15 +22,16 @@
  </header>
 
   <!-- VIP experience overview, inclusions, and booking link. -->
-  <main class="container" style="padding-top: 30px; padding-bottom: 50px;">
-    <p class="crumb" style="margin-bottom: 12px;"><a href="packages.html">Packages</a> / VIP Gaming Experience</p>
+  <main id="main" class="container detail-page">
+    <p class="crumb"><a href="packages.html">Packages</a> / VIP Gaming Experience</p>
     <h1>VIP Gaming Experience</h1>
-    <p class="eyebrow" style="margin: 8px 0;">Premium · Full Day · Package</p>
-    <p class="price" style="font-size: 28px; font-weight: 700; color: #fff; margin-bottom: 16px;">R1,500</p>
+    <p class="eyebrow">Premium · Full Day · Package</p>
+    <p class="price">R1,500</p>
     <p class="lead">A private gaming booth with top-tier custom equipment, priority fiber bandwidth, personal concierge support, and complimentary snacks and drinks delivered directly to your workstation.</p>
+    <img class="detail-image" src="assets/pc-gaming.jpg" alt="Premium gaming PC and peripherals">
 
-    <h2 style="margin-top: 30px;">What is included</h2>
-    <ul class="bullets" style="margin-top: 10px; line-height: 1.8;">
+    <h2>What is included</h2>
+    <ul class="bullets">
       <li>Exclusive, sound-dampened VIP booth with customizable RGB lighting and luxury seating</li>
       <li>Top-spec GPUs, high-refresh 240Hz+ monitors, studio headsets, and mechanical keyboards</li>
       <li>Personal concierge on hand for technical setup, game launches, and refreshment orders</li>
@@ -35,20 +39,20 @@
       <li>Unlimited soft drinks, energy drinks, and a premium snack platter</li>
     </ul>
 
-    <h2 style="margin-top: 30px;">Recommended For</h2>
-    <ul class="bullets" style="margin-top: 10px; line-height: 1.8;">
+    <h2>Recommended For</h2>
+    <ul class="bullets">
       <li><strong>Content Creators & Streamers:</strong> Private, quiet environment with high-end streaming and recording performance.</li>
       <li><strong>Gamers Seeking Ultimate Comfort:</strong> Distraction-free gaming with premium hardware and personal assistant service.</li>
     </ul>
 
-    <div style="margin-top: 30px;">
-      <a class="btn btn-primary" href="fees.html">Book now</a>
+    <div>
+      <a class="btn btn-primary" href="fees.html?package=vip">Book now</a>
     </div>
   </main>
   <footer class="site-footer">
     <div class="container footer-grid">
       <div>
-        <a class="logo" href="index.html"><span class="logo-mark">N</span> NEXT LEVEL</a>
+        <a class="logo" href="index.html" aria-label="Next Level Arena home"><img class="brand-logo" src="assets/next-level-logo.png" alt="Next Level Gaming"></a>
         <p>Gaming &amp; Esports Arena<br>Play. Compete. Connect.</p>
       </div>
       <nav aria-label="Explore">

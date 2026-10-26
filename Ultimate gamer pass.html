@@ -4,11 +4,14 @@
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>Ultimate Gamer Pass | Next Level</title>
-  <link rel="stylesheet" href="course.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <script src="js/script.js" defer></script>
 </head>
 <body>
-  <header>
-    <a class="logo" href="index.html">NL</a>
+  <a class="skip-link" href="#main">Skip to content</a>
+  <header class="site-header container">
+    <a class="logo" href="index.html" aria-label="Next Level Arena home"><img class="brand-logo" src="assets/next-level-logo.png" alt="Next Level Gaming"></a>
     <nav>
       <a href="index.html">Home</a>
       <a href="packages.html">Packages</a>
@@ -19,15 +22,16 @@
   </header>
 
   <!-- Gamer pass overview, inclusions, and booking link. -->
-  <main class="container" style="padding-top: 30px; padding-bottom: 50px;">
-    <p class="crumb" style="margin-bottom: 12px;"><a href="packages.html">Packages</a> / Ultimate Gamer Pass</p>
+  <main id="main" class="container detail-page">
+    <p class="crumb"><a href="packages.html">Packages</a> / Ultimate Gamer Pass</p>
     <h1>Ultimate Gamer Pass</h1>
-    <p class="eyebrow" style="margin: 8px 0;">Arena action · Full Day · Package</p>
-    <p class="price" style="font-size: 28px; font-weight: 700; color: #fff; margin-bottom: 16px;">R1,500</p>
+    <p class="eyebrow">Arena action · Full Day · Package</p>
+    <p class="price">R1,500</p>
     <p class="lead">A full day on the arena floor with unlimited time on PC or console setups, tournament entry, high-speed fiber internet, and a snack voucher included.</p>
+    <img class="detail-image" src="assets/gamerpass.jpg" alt="Neon-lit PC gaming station">
 
-    <h2 style="margin-top: 30px;">What is included</h2>
-    <ul class="bullets" style="margin-top: 10px; line-height: 1.8;">
+    <h2>What is included</h2>
+    <ul class="bullets">
       <li>Unlimited full-day access (10:00 – 18:00) on high-end PCs or modern consoles (PS5 / Xbox Series X)</li>
       <li>Ultra-low latency, high-speed fiber connection for smooth online gaming</li>
       <li>Complimentary entry into daily arena tournaments and leaderboard challenges</li>
@@ -35,20 +39,20 @@
       <li>Pro gaming peripherals (mechanical keyboards, noise-canceling headsets, precision mice/controllers)</li>
     </ul>
 
-    <h2 style="margin-top: 30px;">Recommended For</h2>
-    <ul class="bullets" style="margin-top: 10px; line-height: 1.8;">
+    <h2>Recommended For</h2>
+    <ul class="bullets">
       <li><strong>Hardcore & Competitive Gamers:</strong> Ranked grinding, competitive matchmaking, and tournament play with high FPS and zero lag.</li>
       <li><strong>Casual Gamers:</strong> Full-day access to explore AAA releases, story-driven campaigns, and multiplayer sessions with friends.</li>
     </ul>
 
-    <div style="margin-top: 30px;">
-      <a class="btn btn-primary" href="fees.html">Book now</a>
+    <div>
+      <a class="btn btn-primary" href="fees.html?package=gamer-pass">Book now</a>
     </div>
   </main>
   <footer class="site-footer">
     <div class="container footer-grid">
       <div>
-        <a class="logo" href="index.html"><span class="logo-mark">N</span> NEXT LEVEL</a>
+        <a class="logo" href="index.html" aria-label="Next Level Arena home"><img class="brand-logo" src="assets/next-level-logo.png" alt="Next Level Gaming"></a>
         <p>Gaming &amp; Esports Arena<br>Play. Compete. Connect.</p>
       </div>
       <nav aria-label="Explore">

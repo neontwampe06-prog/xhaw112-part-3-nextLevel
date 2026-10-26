@@ -72,16 +72,15 @@ The website prototype currently contains:
 - A package and experience listing in `packages.html`, with concise summaries and links to each offering's detail page.
 - Individual detail pages for four packages and three experiences.
 - An arena homepage in `index.html` with links to packages, venue information, contact details, and booking.
-- A booking-selection mock-up in `fees.html`.
+- A booking request form in `fees.html` with offering selection, date and time, quantity, contact details, estimated totals, and multi-booking discounts.
 - A contact page with venue address, hours, phone number, and email.
 - A contact form that opens the visitor's email app to send an enquiry.
 
 ### Current Limitations
 
-- The booking page is a static mock-up. Selecting an offering, date, time, or quantity does not update the summary, and confirming does not submit a booking.
+- Booking requests are prepared as an email using the visitor's email application. The website does not save or submit bookings to a server, confirm availability, or take payment.
 - Sending a contact enquiry requires a configured email app. The site does not store or send messages itself.
 - There is no backend, database, user account, payment, or persistent booking functionality.
-- Pages reference `styles.css` or `course.css`, but neither stylesheet is present in the repository. The intended page styling therefore is not included here.
 
 ## Design Approach
 
@@ -107,20 +106,31 @@ The intended visual direction uses a dark, high-tech gaming aesthetic with neon 
 ├── Virtual Reality.html
 ├── Racing Simulator challenge.html
 ├── Escape Room challenge.html
+├── js/
+│   └── script.js
 └── assets/
-    └── gaming-setup.jpg
+    ├── birthday-party.jpg
+    ├── console-gaming.jpg
+    ├── escape-room.jpg
+    ├── esports-training.jpg
+    ├── gamerpass.jpg
+    ├── gaming-setup.jpg
+    ├── next-level-logo.png
+    ├── package-promos.png
+    ├── pc-gaming.jpg
+    └── vr-experience.jpg
 ```
 
 ## Technology
 
 The website prototype uses:
 
-- HTML for page structure and content.
-- Google Fonts for the Rajdhani typeface on pages that load it; an internet connection is needed to fetch the font.
+- HTML for page structure and content, and vanilla JavaScript for package filtering and booking calculations.
+- Google Fonts for Rajdhani and Inter; an internet connection is needed to fetch the fonts. System font fallbacks are used otherwise.
 
 ## Run the Website
 
-No installation or build step is required. Open `index.html` in a web browser to view the booking-selection prototype.
+No installation or build step is required. Open `index.html` in a web browser to view the website.
 
 Alternatively, start a local static web server from the repository root:
 
@@ -136,7 +146,7 @@ Through this project, the team applied and developed skills in:
 
 - Project planning and requirements analysis.
 - User-centred design and interface development.
-- HTML and CSS website development.
+- HTML website development.
 - Research and problem solving.
 - Team communication and collaboration.
 - GitHub version control.

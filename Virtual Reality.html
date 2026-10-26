@@ -4,11 +4,14 @@
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>Virtual Reality Experience | Next Level</title>
-  <link rel="stylesheet" href="course.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <script src="js/script.js" defer></script>
 </head>
 <body>
-  <header>
-    <a class="logo" href="index.html">NL</a>
+  <a class="skip-link" href="#main">Skip to content</a>
+  <header class="site-header container">
+    <a class="logo" href="index.html" aria-label="Next Level Arena home"><img class="brand-logo" src="assets/next-level-logo.png" alt="Next Level Gaming"></a>
     <nav>
       <a href="index.html">Home</a>
       <a href="packages.html">Packages</a>
@@ -19,35 +22,36 @@
   </header>
 
   <!-- VR experience overview, inclusions, and booking link. -->
-  <main class="container" style="padding-top: 30px; padding-bottom: 50px;">
-    <p class="crumb" style="margin-bottom: 12px;"><a href="packages.html">Packages &amp; Experiences</a> / Virtual Reality Experience</p>
+  <main id="main" class="container detail-page">
+    <p class="crumb"><a href="packages.html">Packages &amp; Experiences</a> / Virtual Reality Experience</p>
     <h1>Virtual Reality Experience</h1>
-    <p class="eyebrow" style="margin: 8px 0;">Immersive · 1 Hour · Individual Experience</p>
-    <p class="price" style="font-size: 28px; font-weight: 700; color: #fff; margin-bottom: 16px;">R750 <span style="font-size: 16px; font-weight: 400; color: var(--dim);">per person</span></p>
+    <p class="eyebrow">Immersive · 1 Hour · Individual Experience</p>
+    <p class="price">R750 <span>per person</span></p>
     <p class="lead">Step into 360-degree virtual worlds using next-gen VR headsets and spacious padded bays, complete with a curated library of games and dedicated staff support. Group discount: 2 people 5%, 3 people 10%, 4 or more 15%.</p>
+    <img class="detail-image" src="assets/vr-experience.jpg" alt="Player immersed in a virtual reality game">
 
-    <h2 style="margin-top: 30px;">What is included</h2>
-    <ul class="bullets" style="margin-top: 10px; line-height: 1.8;">
+    <h2>What is included</h2>
+    <ul class="bullets">
       <li>High-end VR hardware (Meta Quest 3 / HTC Vive Pro) with high-refresh displays</li>
       <li>Spacious VR play bays with full spatial tracking and padded safety boundaries</li>
       <li>Wide selection of games (rhythm, shooters, co-op, and action adventures)</li>
       <li>Dedicated staff assistance for fitting, calibration, and game selection</li>
     </ul>
 
-    <h2 style="margin-top: 30px;">Recommended For</h2>
-    <ul class="bullets" style="margin-top: 10px; line-height: 1.8;">
+    <h2>Recommended For</h2>
+    <ul class="bullets">
       <li><strong>First-Time VR Users & Casual Gamers (Ages 10+):</strong> Easy-to-pick-up rhythm, puzzle, and motion games with staff guidance.</li>
       <li><strong>Experienced VR Enthusiasts & Groups:</strong> High-intensity multiplayer co-op shooters and tactical VR action.</li>
     </ul>
 
-    <div style="margin-top: 30px;">
-      <a class="btn btn-primary" href="fees.html">Book now</a>
+    <div>
+      <a class="btn btn-primary" href="fees.html?package=vr">Book now</a>
     </div>
   </main>
   <footer class="site-footer">
     <div class="container footer-grid">
       <div>
-        <a class="logo" href="index.html"><span class="logo-mark">N</span> NEXT LEVEL</a>
+        <a class="logo" href="index.html" aria-label="Next Level Arena home"><img class="brand-logo" src="assets/next-level-logo.png" alt="Next Level Gaming"></a>
         <p>Gaming &amp; Esports Arena<br>Play. Compete. Connect.</p>
       </div>
       <nav aria-label="Explore">

@@ -1,149 +1,74 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
+  <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Fees & Booking — Next Level Arena</title>
+  <meta name="theme-color" content="#07090d">
+  <title>Book a Session | Next Level Arena</title>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Rajdhani:wght@600;700&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="styles.css">
+  <script src="js/script.js" defer></script>
 </head>
 <body>
-<a class="skip-link" href="#main">Skip to content</a>
-
-<header class="site-header container">
-  <a class="logo" href="index.html"><span class="logo-mark">N</span> NEXT LEVEL</a>
-  <nav class="main-nav" aria-label="Main">
-    <ul>
-      <li><a href="index.html">Home</a></li>
-      <li><a href="about.html">About</a></li>
-      <li><a href="packages.html">Packages</a></li>
-      <li><a href="fees.html" aria-current="page">Fees</a></li>
-      <li><a href="contact.html">Contact</a></li>
-    </ul>
-  </nav>
-  <div class="header-actions">
-    <a class="btn btn-primary" href="fees.html">Book session</a>
-  </div>
-</header>
-
-<main id="main" class="container">
-
-  <header class="section-head" style="margin-top: 20px;">
-    <div>
-      <p class="eyebrow">Reserve your time</p>
-      <h1>Book a session</h1>
-      <p class="lead">Choose an experience, date, and start time.</p>
-    </div>
+  <a class="skip-link" href="#main">Skip to content</a>
+  <header class="site-header container">
+    <a class="logo" href="index.html" aria-label="Next Level Arena home"><img class="brand-logo" src="assets/next-level-logo.png" alt="Next Level Gaming"></a>
+    <nav class="main-nav" aria-label="Main navigation"><ul>
+      <li><a href="index.html">Home</a></li><li><a href="packages.html">Packages</a></li><li><a href="fees.html" aria-current="page">Book</a></li><li><a href="about.html">About</a></li><li><a href="contact.html">Contact</a></li>
+    </ul></nav>
   </header>
-
-  <div style="display:grid; grid-template-columns:1.7fr 1fr; gap:28px; align-items:start;">
-
-    <!-- LEFT: SELECTION -->
-    <div>
-      <p class="eyebrow" style="margin-bottom: 8px;">Package or experience</p>
-      <div class="option-list">
-        <div class="option selected">
-          <div><b>Ultimate Gamer Pass</b><i>Full day · Package</i></div>
-          <em>R1,500</em>
-        </div>
-        <div class="option">
-          <div><b>VIP Gaming Experience</b><i>Full day · Package</i></div>
-          <em>R1,500</em>
-        </div>
-        <div class="option">
-          <div><b>Esports Training Package</b><i>Training session · Package</i></div>
-          <em>R1,500</em>
-        </div>
-        <div class="option">
-          <div><b>Birthday Party Package</b><i>3 hours · Package</i></div>
-          <em>R1,500</em>
-        </div>
-        <div class="option">
-          <div><b>Virtual Reality Experience</b><i>1 hour · Experience</i></div>
-          <em>R750</em>
-        </div>
-        <div class="option">
-          <div><b>Racing Simulator Challenge</b><i>1 hour · Experience</i></div>
-          <em>R750</em>
-        </div>
-        <div class="option">
-          <div><b>Escape Room Challenge</b><i>1 hour · Experience</i></div>
-          <em>R750</em>
-        </div>
-      </div>
-
-      <p class="eyebrow" style="margin: 20px 0 8px;">Date</p>
-      <div class="chips">
-        <button class="active" type="button">Today, 28 Sep</button>
-        <button type="button">Tomorrow, 29 Sep</button>
-        <button type="button">Wed, 30 Sep</button>
-        <button type="button">Thu, 1 Oct</button>
-      </div>
-
-      <p class="eyebrow" style="margin: 20px 0 8px;">Start time</p>
-      <div class="chips">
-        <button class="active" type="button">10:00 – 12:00</button>
-        <button type="button">12:00 – 14:00</button>
-        <button type="button">14:00 – 16:00</button>
-        <button type="button">16:00 – 18:00</button>
-      </div>
-
-      <p class="eyebrow" style="margin: 20px 0 8px;">Number of bookings</p>
-      <div class="quantity">
-        <button type="button" aria-label="Decrease quantity">−</button>
-        <b>1</b>
-        <button type="button" aria-label="Increase quantity">+</button>
-      </div>
+  <main id="main" class="container page-main">
+    <section class="page-head"><p class="eyebrow">RESERVE YOUR TIME</p><h1>Book a session</h1><p class="lead">Choose an experience, date, time and group size. The arena will confirm availability by email.</p></section>
+    <div class="booking-layout">
+      <form class="booking-form" id="booking-form">
+        <fieldset class="booking-section"><legend><span>01</span> Choose an experience</legend>
+          <div class="option-list">
+            <label class="option"><input type="radio" name="package" value="gamer-pass" data-name="Ultimate Gamer Pass" data-price="1500" required><span><b>Ultimate Gamer Pass</b><i>Full day · Package</i></span><em>R1,500</em></label>
+            <label class="option"><input type="radio" name="package" value="vip" data-name="VIP Gaming Experience" data-price="1500"><span><b>VIP Gaming Experience</b><i>Full day · Package</i></span><em>R1,500</em></label>
+            <label class="option"><input type="radio" name="package" value="esports" data-name="Esports Training Package" data-price="1500"><span><b>Esports Training Package</b><i>Training session · Package</i></span><em>R1,500</em></label>
+            <label class="option"><input type="radio" name="package" value="birthday" data-name="Birthday Party Package" data-price="1500"><span><b>Birthday Party Package</b><i>3 hours · Package</i></span><em>R1,500</em></label>
+            <label class="option"><input type="radio" name="package" value="vr" data-name="Virtual Reality Experience" data-price="750"><span><b>Virtual Reality Experience</b><i>1 hour · Experience</i></span><em>R750</em></label>
+            <label class="option"><input type="radio" name="package" value="racing" data-name="Racing Simulator Challenge" data-price="750"><span><b>Racing Simulator Challenge</b><i>1 hour · Experience</i></span><em>R750</em></label>
+            <label class="option"><input type="radio" name="package" value="escape-room" data-name="Escape Room Challenge" data-price="750"><span><b>Escape Room Challenge</b><i>1 hour · Experience</i></span><em>R750</em></label>
+          </div>
+        </fieldset>
+        <fieldset class="booking-section"><legend><span>02</span> Pick a date &amp; time</legend>
+          <div class="booking-contact">
+            <div class="field"><label for="booking-date">Preferred date</label><input type="date" id="booking-date" name="date" required></div>
+            <div class="field"><label for="booking-time">Start time</label><select id="booking-time" name="time" required><option value="10:00">10:00</option><option value="12:00">12:00</option><option value="14:00">14:00</option><option value="16:00">16:00</option></select></div>
+          </div>
+          <p class="form-note">Open daily, 10:00–18:00. Your selected date and time are a request, subject to venue availability.</p>
+        </fieldset>
+        <fieldset class="booking-section"><legend><span>03</span> Group size</legend>
+          <div class="quantity"><button type="button" data-quantity="-1" aria-label="Remove one booking">−</button><input id="booking-quantity" name="quantity" type="number" min="1" max="20" step="1" value="1" aria-label="Number of bookings"><button type="button" data-quantity="1" aria-label="Add one booking">+</button><span>bookings</span></div>
+          <p class="form-note">Multi-booking discounts are calculated on the estimated total.</p>
+        </fieldset>
+        <fieldset class="booking-section"><legend><span>04</span> Your contact details</legend>
+          <div class="booking-contact">
+            <div class="field"><label for="booking-name">Full name</label><input id="booking-name" name="name" autocomplete="name" required placeholder="Your name"></div>
+            <div class="field"><label for="booking-email">Email address</label><input id="booking-email" name="email" type="email" autocomplete="email" required placeholder="you@example.com"></div>
+          </div>
+          <div class="field"><label for="booking-phone">Mobile number</label><input id="booking-phone" name="phone" type="tel" autocomplete="tel" placeholder="+27 00 000 0000"></div>
+          <div class="field"><label for="booking-requests">Special requests <span class="optional">(optional)</span></label><textarea id="booking-requests" name="requests" rows="3" placeholder="Tell us about your group or any special requirements."></textarea></div>
+        </fieldset>
+        <button class="btn btn-primary button-wide" type="submit">Send booking request <span aria-hidden="true">→</span></button>
+        <p class="form-note">This prototype prepares an email request in your email app; it does not save a booking or take payment.</p>
+      </form>
+      <aside class="summary" aria-live="polite">
+        <p class="eyebrow">YOUR SESSION</p><h2>Booking summary</h2>
+        <div class="summary-package"><img class="summary-image" id="summary-image" src="assets/gamerpass.jpg" alt=""><div><strong id="summary-name">Choose an experience</strong><span id="summary-details">Choose a date and time</span></div></div>
+        <div class="row"><span>Subtotal</span><strong id="summary-subtotal">R1,500</strong></div>
+        <div class="row"><span id="summary-discount-label">Multi-booking discount (0%)</span><strong class="discount-value" id="summary-discount">−R0</strong></div>
+        <div class="row total"><span>Estimated total</span><b id="summary-total">R1,500</b></div>
+        <p class="form-note">The arena will confirm availability and final details.</p>
+      </aside>
     </div>
-
-    <!-- RIGHT: SUMMARY -->
-    <aside class="summary">
-      <h3>Summary</h3>
-      <b style="font-family: var(--font-head); font-size: 16px;">Ultimate Gamer Pass</b>
-      <p style="color: var(--dim); font-size: 13px; margin: 2px 0 10px;">Today, 28 Sep · 10:00 – 12:00</p>
-
-      <div class="row"><span>Subtotal</span><span>R1,500</span></div>
-      <div class="row"><span>Multi-booking discount (0%)</span><span style="color: var(--li);">−R0</span></div>
-      <div class="row total"><span>Total</span><b>R1,500</b></div>
-
-      <a class="btn btn-primary" href="#">Confirm 1 booking</a>
-    </aside>
-
-  </div>
-
-</main>
-
-<footer class="site-footer">
-  <div class="container footer-grid">
-    <div>
-      <a class="logo" href="index.html"><span class="logo-mark">N</span> NEXT LEVEL</a>
-      <p>Gaming &amp; Esports Arena<br>Play. Compete. Connect.</p>
-    </div>
-    <nav aria-label="Explore">
-      <h4>Explore</h4>
-      <ul>
-        <li><a href="index.html">Home</a></li>
-        <li><a href="about.html">About</a></li>
-        <li><a href="packages.html">Packages</a></li>
-        <li><a href="fees.html">Fees</a></li>
-      </ul>
-    </nav>
-    <nav aria-label="Support">
-      <h4>Support</h4>
-      <ul>
-        <li><a href="contact.html">Contact us</a></li>
-        <li><a href="fees.html">Book a session</a></li>
-      </ul>
-    </nav>
-    <address>
-      <h4>Visit</h4>
-      Parktown 2198, Johannesburg<br>
-      Open daily · 10:00–18:00<br>
-      <a href="tel:+27115547728">011 554 7728</a>
-    </address>
-  </div>
-</footer>
+  </main>
+  <footer class="site-footer"><div class="container footer-grid">
+    <div><a class="logo" href="index.html"><img class="brand-logo" src="assets/next-level-logo.png" alt="Next Level Gaming"></a><p>Gaming &amp; Esports Arena<br>Play. Compete. Connect.</p></div>
+    <nav aria-label="Explore"><h4>Explore</h4><ul><li><a href="index.html">Home</a></li><li><a href="packages.html">Packages</a></li><li><a href="about.html">About</a></li></ul></nav>
+    <nav aria-label="Support"><h4>Support</h4><ul><li><a href="contact.html">Contact us</a></li><li><a href="fees.html">Book a session</a></li></ul></nav>
+    <address><h4>Visit</h4>Parktown 2198, Johannesburg<br>Open daily · 10:00–18:00<br><a href="tel:+27115547728">011 554 7728</a></address>
+  </div></footer>
 </body>
 </html>

@@ -4,11 +4,14 @@
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>Esports Training Package | Next Level</title>
-  <link rel="stylesheet" href="course.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <script src="js/script.js" defer></script>
 </head>
 <body>
-  <header>
-    <a class="logo" href="index.html">NL</a>
+  <a class="skip-link" href="#main">Skip to content</a>
+  <header class="site-header container">
+    <a class="logo" href="index.html" aria-label="Next Level Arena home"><img class="brand-logo" src="assets/next-level-logo.png" alt="Next Level Gaming"></a>
     <nav>
       <a href="index.html">Home</a>
       <a href="packages.html">Packages</a>
@@ -19,15 +22,16 @@
  </header>
 
   <!-- Training package overview, inclusions, and booking link. -->
-  <main class="container" style="padding-top: 30px; padding-bottom: 50px;">
-    <p class="crumb" style="margin-bottom: 12px;"><a href="packages.html">Packages</a> / Esports Training Package</p>
+  <main id="main" class="container detail-page">
+    <p class="crumb"><a href="packages.html">Packages</a> / Esports Training Package</p>
     <h1>Esports Training Package</h1>
-    <p class="eyebrow" style="margin: 8px 0;">Level up · Competitive · Package</p>
-    <p class="price" style="font-size: 28px; font-weight: 700; color: #fff; margin-bottom: 16px;">R1,500</p>
+    <p class="eyebrow">Level up · Competitive · Package</p>
+    <p class="price">R1,500</p>
     <p class="lead">High-level coaching and structured training for players and teams, covering map strategy, team communication, match analysis, and dedicated practice sessions with performance feedback.</p>
+    <img class="detail-image" src="assets/esports-training.jpg" alt="Gaming arena set up for esports training">
 
-    <h2 style="margin-top: 30px;">What is included</h2>
-    <ul class="bullets" style="margin-top: 10px; line-height: 1.8;">
+    <h2>What is included</h2>
+    <ul class="bullets">
       <li>Tournament-grade hardware, high-refresh-rate monitors, and low-latency networks</li>
       <li>Private team booths with dedicated voice channels for clear shot-calling</li>
       <li>Strategy coaching, map positioning, and playbook development</li>
@@ -35,21 +39,21 @@
       <li>Targeted practice sessions in popular competitive titles (Valorant, CS2, Rocket League, etc.)</li>
     </ul>
 
-    <h2 style="margin-top: 30px;">Recommended For</h2>
-    <ul class="bullets" style="margin-top: 10px; line-height: 1.8;">
+    <h2>Recommended For</h2>
+    <ul class="bullets">
       <li><strong>Amateur & Semi-Pro Esports Squads:</strong> Refine team synergy, scrim executions, tactical communication, and tournament readiness.</li>
       <li><strong>Solo Competitive Players:</strong> Aim training, game-sense analysis, mechanic refinement, and climbing ranked ladders.</li>
     </ul>
 
-    <div style="margin-top: 30px;">
-      <a class="btn btn-primary" href="fees.html">Book now</a>
+    <div>
+      <a class="btn btn-primary" href="fees.html?package=esports">Book now</a>
     </div>
   </main>
 
   <footer class="site-footer">
     <div class="container footer-grid">
       <div>
-        <a class="logo" href="index.html"><span class="logo-mark">N</span> NEXT LEVEL</a>
+        <a class="logo" href="index.html" aria-label="Next Level Arena home"><img class="brand-logo" src="assets/next-level-logo.png" alt="Next Level Gaming"></a>
         <p>Gaming &amp; Esports Arena<br>Play. Compete. Connect.</p>
       </div>
       <nav aria-label="Explore">

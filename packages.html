@@ -6,12 +6,12 @@
   <title>Packages &amp; Experiences | Next Level</title>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Rajdhani:wght@600;700&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="styles.css">
+  <script src="js/script.js" defer></script>
 </head>
 <body>
+  <a class="skip-link" href="#main">Skip to content</a>
   <header class="site-header container">
-    <a class="logo" href="index.html"><span class="logo-mark">N</span> NEXT LEVEL</a>
+    <a class="logo" href="index.html" aria-label="Next Level Arena home"><img class="brand-logo" src="assets/next-level-logo.png" alt="Next Level Gaming"></a>
     <nav class="main-nav" aria-label="Main">
       <ul>
         <li><a href="index.html">Home</a></li>
@@ -27,59 +27,71 @@
   </header>
 
   <!-- Package and experience summaries link to their detailed pages. -->
-  <main class="container">
+  <main id="main" class="container">
     <section class="page-head">
       <div>
         <span class="eyebrow">Choose your play</span>
         <h1>Packages &amp; Experiences</h1>
         <p class="lead">Browse the options, then open a detail page to see what’s included.</p>
       </div>
+      <div class="chips" role="group" aria-label="Filter packages">
+        <button class="active" type="button" data-filter="all" aria-pressed="true">All</button>
+        <button type="button" data-filter="package" aria-pressed="false">Packages</button>
+        <button type="button" data-filter="experience" aria-pressed="false">Experiences</button>
+      </div>
     </section>
 
-    <section id="packages" class="grid">
-      <article class="card">
+    <section id="packages" class="grid" aria-live="polite">
+      <article class="card" data-type="package">
+        <img class="card-image" src="assets/gamerpass.jpg" alt="Neon-lit PC gaming setup">
         <div class="meta"><span class="eyebrow">Package</span><span>Full day</span></div>
         <h2><a href="Ultimate%20gamer%20pass.html">Ultimate Gamer Pass</a></h2>
         <p>Enjoy a full day of PC or console gaming with tournament entry.</p>
         <div class="price-row"><span class="price">R1,500</span><a href="Ultimate%20gamer%20pass.html" class="btn">View details</a></div>
       </article>
 
-      <article class="card">
+      <article class="card" data-type="package">
+        <img class="card-image" src="assets/pc-gaming.jpg" alt="Premium PC gaming station">
         <div class="meta"><span class="eyebrow">Package</span><span>Full day</span></div>
         <h2><a href="VIP%20gaming%20experience.html">VIP Gaming Experience</a></h2>
         <p>Relax in a private booth with premium gaming equipment and support.</p>
         <div class="price-row"><span class="price">R1,500</span><a href="VIP%20gaming%20experience.html" class="btn">View details</a></div>
       </article>
 
-      <article class="card">
+      <article class="card" data-type="package">
+        <img class="card-image" src="assets/esports-training.jpg" alt="Gaming arena set up for esports training">
         <div class="meta"><span class="eyebrow">Package</span><span>Training</span></div>
         <h2><a href="Esports%20Training%20package.html">Esports Training Package</a></h2>
         <p>Build competitive skills with coaching, practice, and match feedback.</p>
         <div class="price-row"><span class="price">R1,500</span><a href="Esports%20Training%20package.html" class="btn">View details</a></div>
       </article>
 
-      <article class="card">
+      <article class="card" data-type="package">
+        <img class="card-image" src="assets/birthday-party.jpg" alt="Birthday cake at a colourful gaming party">
         <div class="meta"><span class="eyebrow">Package</span><span>3 hours</span></div>
         <h2><a href="Birthday%20Party%20package.html">Birthday Party Package</a></h2>
         <p>Celebrate with group gaming, friendly competitions, and refreshments.</p>
         <div class="price-row"><span class="price">R1,500</span><a href="Birthday%20Party%20package.html" class="btn">View details</a></div>
       </article>
 
-      <article class="card">
+      <article class="card" data-type="experience">
+        <img class="card-image" src="assets/vr-experience.jpg" alt="Player enjoying a virtual reality game">
         <div class="meta"><span class="eyebrow experience">Experience</span><span>1 hour</span></div>
         <h2><a href="Virtual%20Reality.html">Virtual Reality Experience</a></h2>
         <p>Explore immersive VR games with equipment and staff assistance.</p>
         <div class="price-row"><span class="price">R750</span><a href="Virtual%20Reality.html" class="btn">View details</a></div>
       </article>
 
-      <article class="card">
+      <article class="card" data-type="experience">
+        <img class="card-image" src="assets/console-gaming.jpg" alt="Gaming consoles and controllers">
         <div class="meta"><span class="eyebrow experience">Experience</span><span>1 hour</span></div>
         <h2><a href="Racing%20Simulator%20challenge.html">Racing Simulator Challenge</a></h2>
         <p>Race on realistic simulator rigs and aim for the leaderboard.</p>
         <div class="price-row"><span class="price">R750</span><a href="Racing%20Simulator%20challenge.html" class="btn">View details</a></div>
       </article>
 
-      <article class="card">
+      <article class="card" data-type="experience">
+        <img class="card-image" src="assets/escape-room.jpg" alt="Neon-lit room ready for an escape room challenge">
         <div class="meta"><span class="eyebrow experience">Experience</span><span>1 hour</span></div>
         <h2><a href="Escape%20Room%20challenge.html">Escape Room Challenge</a></h2>
         <p>Solve themed puzzles as a team and beat the 60-minute challenge.</p>
@@ -91,7 +103,7 @@
   <footer class="site-footer">
     <div class="container footer-grid">
       <div>
-        <a class="logo" href="index.html"><span class="logo-mark">N</span> NEXT LEVEL</a>
+        <a class="logo" href="index.html" aria-label="Next Level Arena home"><img class="brand-logo" src="assets/next-level-logo.png" alt="Next Level Gaming"></a>
         <p>Gaming &amp; Esports Arena<br>Play. Compete. Connect.</p>
       </div>
       <nav aria-label="Explore">

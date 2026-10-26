@@ -4,12 +4,15 @@
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>Birthday Party Package | Next Level</title>
-  <link rel="stylesheet" href="course.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <script src="js/script.js" defer></script>
 </head>
 <body>
   <!-- Site header provides links back to the main sections of the website. -->
-  <header>
-    <a class="logo" href="index.html">NL</a>
+  <a class="skip-link" href="#main">Skip to content</a>
+  <header class="site-header container">
+    <a class="logo" href="index.html" aria-label="Next Level Arena home"><img class="brand-logo" src="assets/next-level-logo.png" alt="Next Level Gaming"></a>
     <nav>
       <a href="index.html">Home</a>
       <a href="packages.html">Packages</a>
@@ -21,17 +24,18 @@
   </header>
 
   <!-- Main package details: duration, price, and a short description of the party. -->
-  <main class="container" style="padding-top: 30px; padding-bottom: 50px;">
+  <main id="main" class="container detail-page">
     <!-- Breadcrumb returns visitors to the complete package and experience listing. -->
-    <p class="crumb" style="margin-bottom: 12px;"><a href="packages.html">Packages</a> / Birthday Party Package</p>
+    <p class="crumb"><a href="packages.html">Packages</a> / Birthday Party Package</p>
     <h1>Birthday Party Package</h1>
-    <p class="eyebrow" style="margin: 8px 0;">Celebrate · 3 Hours · Package</p>
-    <p class="price" style="font-size: 28px; font-weight: 700; color: #fff; margin-bottom: 16px;">R1,500</p>
+    <p class="eyebrow">Celebrate · 3 Hours · Package</p>
+    <p class="price">R1,500</p>
     <p class="lead">A 3-hour reserved party area featuring multiplayer competitions, high-end hardware, decorations, catering, and prizes for winners.</p>
+    <img class="detail-image" src="assets/birthday-party.jpg" alt="Birthday party with gaming and refreshments">
     
     <!-- List the venue, gaming, refreshments, and staff support included in the package. -->
-    <h2 style="margin-top: 30px;">What is included</h2>
-    <ul class="bullets" style="margin-top: 10px; line-height: 1.8;">
+    <h2>What is included</h2>
+    <ul class="bullets">
       <li>Reserved party area with dedicated group seating</li>
       <li>Choice of high-performance gaming PCs or modern consoles (PS5 / Xbox Series X)</li>
       <li>Organized multiplayer competitions and mini-tournaments</li>
@@ -41,15 +45,15 @@
     </ul>
 
     <!-- Give families examples of suitable activities for each age group. -->
-    <h2 style="margin-top: 30px;">Recommended Age Groups</h2>
-    <ul class="bullets" style="margin-top: 10px; line-height: 1.8;">
+    <h2>Recommended Age Groups</h2>
+    <ul class="bullets">
       <li><strong>Junior Gamers (Ages 7 – 12):</strong> Co-op party games, casual racing, and team-friendly titles (e.g., Minecraft, Rocket League).</li>
       <li><strong>Teens & Young Adults (Ages 13 – 18+):</strong> Competitive multiplayer and esports tournaments (e.g., FC24, Valorant, Fortnite).</li>
     </ul>
 
     <!-- Booking link takes visitors to the session booking page. -->
-    <div style="margin-top: 30px;">
-      <a class="btn btn-primary" href="fees.html">Book this package</a>
+    <div>
+      <a class="btn btn-primary" href="fees.html?package=birthday">Book this package</a>
     </div>
   </main>
 
@@ -57,7 +61,7 @@
   <footer class="site-footer">
     <div class="container footer-grid">
       <div>
-        <a class="logo" href="index.html"><span class="logo-mark">N</span> NEXT LEVEL</a>
+        <a class="logo" href="index.html" aria-label="Next Level Arena home"><img class="brand-logo" src="assets/next-level-logo.png" alt="Next Level Gaming"></a>
         <p>Gaming &amp; Esports Arena<br>Play. Compete. Connect.</p>
       </div>
       <nav aria-label="Explore">

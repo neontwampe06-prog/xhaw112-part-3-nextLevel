@@ -4,11 +4,14 @@
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>Racing Simulator Challenge | Next Level</title>
-  <link rel="stylesheet" href="course.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <script src="js/script.js" defer></script>
 </head>
 <body>
-  <header>
-    <a class="logo" href="index.html">NL</a>
+  <a class="skip-link" href="#main">Skip to content</a>
+  <header class="site-header container">
+    <a class="logo" href="index.html" aria-label="Next Level Arena home"><img class="brand-logo" src="assets/next-level-logo.png" alt="Next Level Gaming"></a>
     <nav>
       <a href="index.html">Home</a>
       <a href="packages.html">Packages</a>
@@ -19,15 +22,16 @@
  </header>
 
   <!-- Racing experience overview, inclusions, and booking link. -->
-  <main class="container" style="padding-top: 30px; padding-bottom: 50px;">
-    <p class="crumb" style="margin-bottom: 12px;"><a href="packages.html">Packages &amp; Experiences</a> / Racing Simulator Challenge</p>
+  <main id="main" class="container detail-page">
+    <p class="crumb"><a href="packages.html">Packages &amp; Experiences</a> / Racing Simulator Challenge</p>
     <h1>Racing Simulator Challenge</h1>
-    <p class="eyebrow" style="margin: 8px 0;">Speed · 1 Hour · Individual Experience</p>
-    <p class="price" style="font-size: 28px; font-weight: 700; color: #fff; margin-bottom: 16px;">R750 <span style="font-size: 16px; font-weight: 400; color: var(--dim);">per person</span></p>
+    <p class="eyebrow">Speed · 1 Hour · Individual Experience</p>
+    <p class="price">R750 <span>per person</span></p>
     <p class="lead">Test your driving skills on professional sim rigs with force-feedback controls, iconic tracks like Kyalami and Nürburgring, and real-time leaderboards. Group discount: 2 people 5%, 3 people 10%, 4 or more 15%.</p>
+    <img class="detail-image" src="assets/console-gaming.jpg" alt="Racing simulator and gaming console setup">
 
-    <h2 style="margin-top: 30px;">What is included</h2>
-    <ul class="bullets" style="margin-top: 10px; line-height: 1.8;">
+    <h2>What is included</h2>
+    <ul class="bullets">
       <li>Professional sim racing rigs with force-feedback wheels and load-cell pedal sets</li>
       <li>Choice of world-famous circuits and high-performance supercars</li>
       <li>Simultaneous multiplayer lobbies to race head-to-head against friends</li>
@@ -35,20 +39,20 @@
       <li>Adjustable driving aids for all skill levels</li>
     </ul>
 
-    <h2 style="margin-top: 30px;">Recommended For</h2>
-    <ul class="bullets" style="margin-top: 10px; line-height: 1.8;">
+    <h2>Recommended For</h2>
+    <ul class="bullets">
       <li><strong>Casual Drivers & Motorsport Fans (Ages 8+):</strong> Hot-lapping, friendly multiplayer matches, and fast-paced fun with driving aids enabled.</li>
       <li><strong>Sim Racers & Competitive Drivers:</strong> Raw lap times, precise braking points, and authentic telemetry feedback with zero driving aids.</li>
     </ul>
 
-    <div style="margin-top: 30px;">
-      <a class="btn btn-primary" href="fees.html">Book now</a>
+    <div>
+      <a class="btn btn-primary" href="fees.html?package=racing">Book now</a>
     </div>
   </main>
   <footer class="site-footer">
     <div class="container footer-grid">
       <div>
-        <a class="logo" href="index.html"><span class="logo-mark">N</span> NEXT LEVEL</a>
+        <a class="logo" href="index.html" aria-label="Next Level Arena home"><img class="brand-logo" src="assets/next-level-logo.png" alt="Next Level Gaming"></a>
         <p>Gaming &amp; Esports Arena<br>Play. Compete. Connect.</p>
       </div>
       <nav aria-label="Explore">
